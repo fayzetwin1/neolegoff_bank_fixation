@@ -1,2 +1,2 @@
 from .modules import AioNeolegoff
-from .exceptions import TinkoffApiError
+from .exceptions.responses.base import NeolegoffApiError
