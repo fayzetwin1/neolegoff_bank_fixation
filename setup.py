@@ -1,7 +1,5 @@
 from io import open
-from os import environ
-
-from setuptools import setup
+from setuptools import setup, find_packages 
 
 
 def read(filename):
@@ -15,16 +13,14 @@ def requirements():
 
 
 setup(
-    name="neolegoff_bank",
-    version=environ.get("TAG_VERSION").replace("v", ""),
-    packages=[
-        "neolegoff_bank",
-        "neolegoff_bank.exceptions",
-        "neolegoff_bank.models",
-    ],
+    name="neolegoff_bank_fixation",
+    version="0.1.0-fork", 
+    
+    packages=find_packages(),
+    
     url="https://github.com/WhiteApfel/neolegoff_bank",
     license="Mozilla Public License 2.0",
-    author="WhiteApfel",
+    author="WhiteApfel, fayzetwin",
     author_email="white@pfel.ru",
     description="Simple Tinkoff Bank API client",
     install_requires=requirements(),
