@@ -14,7 +14,7 @@ def requirements():
 
 setup(
     name="neolegoff_bank_fixation",
-    version="0.1.0-fork", 
+    version="0.1.1", 
     
     packages=find_packages(),
     
